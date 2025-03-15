@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarDekho</title>
+    <link rel="stylesheet" href="cardekho.css">
+    <script src="cardekho.js"></script>
+</head>
+<body style="height: 1500px;">
+    <!--Heading part-->
+    <center>
+    <h1 style="font-style: oblique;"><i><b>Car Dekho</b></i></h1>
+</center>
+    <span><a href="./Login.html">Log out</a></span>
+    
+    <!-- Auto-type part-->
+    <div class="typing-text" id="typewriter" style="text-align: center;font-style: italic;font-family: Verdana, Geneva, Tahoma, sans-serif;"></div>
+    <script>
+      let text ="This is a one sreach stop for Car query";
+      let index = 0;
+      let speed = 100; // Typing speed in milliseconds
+      function typeWriter() {
+        if (index < text.length) {
+          document.getElementById("typewriter").textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      typeWriter(); 
+    </script>
+
+    <!-- Country images -->
+     <div class="c1">
+        <div class="c2"> 
+            <a href="./india.html"><img src="./images.png" alt=""></a>
+            <a href="./brazil.html"><img src="./brazil.png" alt=""></a>
+            <a href="./germany.html"><img src="./ger.png" alt=""></a>
+            <a href="./japan.html"><img src="./jap.png" alt=""></a>
+            <a href=""><img src="./mexico.png" alt=""></a>
+            <a href=""><img src="./usa.png" alt=""></a>
+            <a href=""><img src="./spain.png" alt=""></a>
+            <a href=""><img src="./thailand.png" alt=""></a>
+     </div>
+    </div>
+
+     <!--Car brands-->
+     <div class="c3">
+        <div class="c4"> 
+            <a href=""><img src="./ford.png" alt=""></a>
+            <a href=""><img src="./volks.png" alt=""></a>
+            <a href=""><img src="./toyota.png" alt=""></a>
+            <a href=""><img src="./mg.png" alt=""></a>
+            <a href=""><img src="./mahindra.png" alt=""></a>
+            <a href=""><img src="./kia.png" alt=""></a>
+            <a href=""><img src="./honda.png" alt=""></a>
+            <a href=""><img src="./hyundai.png" alt=""></a>
+     </div>
+    </div>
+    <br><br>
+
+
+    <form id="mileageForm">
+      <label for="roadType">Road Type:</label>
+      <br><br>
+      <select id="roadType">
+        <option value="paved">Paved</option>
+        <option value="rough">Rough</option>
+        <option value="hilly">Hilly</option>
+        <option value="urban">Urban</option>
+        <option value="highway">Highway</option>
+        <option value="snow">Snow</option>
+        <option value="sandy">Sandy</option>
+      </select><br><br>
+
+      <label for="drivingStyle">Driving Style:</label>
+      <br><br>
+      <select id="drivingStyle">
+        <option value="aggressive">Aggressive</option>
+        <option value="smooth">Smooth</option>
+        <option value="city">City</option>
+        <option value="highway">Highway</option>
+        <option value="eco">Eco-Driving</option>
+        <option value="defensive">Defensive</option>
+      </select><br><br>
+
+      <label for="season">Type of Season:</label>
+      <br><br>
+      <select id="season">
+        <option value="winter">Winter</option>
+        <option value="summer">Summer</option>
+        <option value="spring">Spring</option>
+        <option value="autumn">Autumn</option>
+      </select><br><br>
+
+      <label for="base_mileage">Base Mileage (in km/l):</label>
+      <input type="number" id="base_mileage" name="base_mileage" required><br><br>
+
+      <button type="button" onclick="calculateAndRedirect()">Calculate</button>
+  </form>
+
+</body>
+</html>

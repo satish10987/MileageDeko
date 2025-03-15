@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Output Page</title>
+  <style>
+    h2{
+      font-size: xx-large;
+      margin: 20px;
+    }
+    #output{
+      margin: 20px;
+      font-size: xx-large;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Entered Vehicle Details</h2>
+
+  <!-- Section to display the collected data -->
+  <div id="output">
+    <p><strong>Country Name:</strong> <span id="countryOutput"></span></p>
+    <p><strong>Road Type:</strong> <span id="roadTypeOutput"></span></p>
+    <p><strong>Driving Style:</strong> <span id="drivingStyleOutput"></span></p>
+    <p><strong>Vehicle Brand:</strong> <span id="vehicleBrandOutput"></span></p>
+    <p><strong>Type of Season:</strong> <span id="seasonOutput"></span></p>
+    <p><strong>Base Mileage:</strong> <span id="MileageOutput"></span></p>
+  </div>
+
+  <!-- Auto-type part-->
+  <div class="typing-text" id="typewriter" style="font-size: 50px;text-align: center;font-style: italic;font-family: Verdana, Geneva, Tahoma, sans-serif;"></div>
+  <script>
+    let text ="Through this we can conclude the mileage produced by the car is _____";
+    let index = 0;
+    let speed = 100; // Typing speed in milliseconds
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById("typewriter").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter(); 
+  </script>
+
+
+  <script>
+    // Retrieve stored values from localStorage
+    const roadType = localStorage.getItem('roadType');
+    const drivingStyle = localStorage.getItem('drivingStyle');
+    const vehicleBrand = localStorage.getItem('vehicleBrand');
+    const season = localStorage.getItem('season');
+    const Mileage = localStorage.getItem('Mileage');
+
+    // Display the stored values in the respective places
+    document.getElementById('roadTypeOutput').textContent = roadType;
+    document.getElementById('drivingStyleOutput').textContent = drivingStyle;
+    document.getElementById('vehicleBrandOutput').textContent = vehicleBrand;
+    document.getElementById('seasonOutput').textContent = season;
+    document.getElementById('MileageOutput').textContent = Mileage;
+  </script>
+
+</body>
+</html>

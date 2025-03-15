@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Mileage Result</title>
+    <style>
+        center{
+            margin-top: 300px;
+        }
+        body{
+            background-color: rgb(58, 54, 54);
+        }
+        h1{
+            color: aqua;
+        }
+        p{
+            color: aquamarine;
+            font-size: xx-large;
+        }
+        a{
+            margin-top: 100px;
+            color: rgb(212, 22, 22);
+            font-size: xx-large;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vehicle Mileage Result</h1>
+    <p>The calculated vehicle mileage is: <span id="result"></span> km/l.</p>
+    <a href="Cardekho.html">Go back</a>
+
+    <script>
+        // Get the final mileage from localStorage
+        const mileage = localStorage.getItem("finalMileage");
+
+        // Display the result in the HTML
+        document.getElementById("result").textContent = mileage;
+    </script>
+</body>
+</html>

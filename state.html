@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+            font-size: xx-large;
+            background-color: black;
+            color: white;
+            font-style: italic;
+        }
+        input{
+            font-size: xx-large;
+            color: rgb(1, 58, 46);
+            margin-left: 90px;
+        }
+        label{
+            color: aqua;
+            font-size: xx-large;
+            margin-left: 90px;
+        }
+        select{
+            font-size: xx-large;
+            color: rgb(1, 58, 46);
+            margin-left: 90px;
+        }
+        span{
+            font-size: 40px;
+            color: rgb(245, 225, 5);
+        }
+    </style>
+</head>
+<body>
+    <p>In INDIA and that to in <span> State roads </span> now you have to choose the vehicle brand</p>
+    <form action="output.html">
+        <label for="cars">Choose a car :</label>
+        <br><br>
+        <select name="cars" id="cars">
+            <optgroup label="VOLKSWAGEN">
+                    <option value="virtus">Virtus</option>
+                    <option value="tiguan">Tiguan</option>
+                    <option value="taigun">Taigun</option>
+            </optgroup>
+            <optgroup label="KIA">
+                <option value="sonet">Sonet</option>
+                <option value="seltas">Seltas</option>
+                <option value="carnival">Carnival</option>
+            </optgroup>
+            <optgroup label="MAHINDRA">
+                <option value="bolero">Bolero</option>
+                <option value="xuv">XUV</option>
+                <option value="thar">Thar</option>
+            </optgroup>
+            <optgroup label="MG">
+                <option value="hector">Hector</option>
+                <option value="hector plus">Hector Plus</option>
+                <option value="comet">Comet</option>
+            </optgroup>
+        </select><br><br><hr><br><br>
+        <label for="Season">Type of Driving</label>
+    <br><br>
+    <select name="Seasons" id="Season">
+        <option value="">Select the option</option>
+        <option value="aggresive">Aggresive Drivers</option>
+        <option value="cautious">Cautious Drivers</option>
+        <option value="prof">Professional Drivers</option>
+        <option value="novice">Novice Drivers</option>
+    </select>
+        <br><br><hr><br><br>
+    <label for="Season">Type of season</label>
+    <br><br>
+    <select name="Seasons" id="Season">
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="monsoon">Monsoon</option>
+        <option value="winter">Winter</option>
+        <option value="autumn">Autumn</option>
+    </select><br><br><hr><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

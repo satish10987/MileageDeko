@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.c1{
+    margin-left: 30px;
+    margin-bottom: 200px;
+    background-color: bisque;
+}
+iframe{
+    border-color: black;
+}
+img{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}

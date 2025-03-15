@@ -1,0 +1,69 @@
+body{
+    background-color: darkcyan;
+}
+
+label{
+    background-color: darkcyan;
+    color: black;
+    font-size: xx-large;
+}
+
+.c1{
+    position: relative;
+    padding: 40px;
+    height: 140px;
+    width: 100%;
+    overflow-y: scroll;
+    border: none;
+}
+
+.c2{
+    height: 100px;
+    width: 2000px;
+    border: none;
+}
+.c3{
+    position: relative;
+    padding: 40px;
+    height: 140px;
+    width: 100%;
+    overflow-y: scroll;
+    border: none;
+}
+
+.c4{
+    height: 100px;
+    width: 2000px;
+    border: none;
+}
+a{
+    padding: 50px;
+}
+img{
+    border: black 1px solid;
+    border-radius: 20px;
+    height: 100px;
+}
+label , input,select{
+    font-size: x-large;
+    margin-left: 20px;
+}
+.c5{
+    font-size: x-large;
+}
+h1{
+    text-align: center;
+}
+span > a{
+    text-decoration: none;
+    font-size: x-large;
+    margin-left: 80%;
+    margin-bottom: 20%;        
+}
+
+button{
+    margin: 14px;
+    width: 150px;
+    height: 50px;
+    font-size: xx-large;
+}
